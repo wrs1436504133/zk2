@@ -1,5 +1,8 @@
 package com.wangrunsong.string;
 
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
+
 public class StringUtils {
 	/*
 	 *  方法功能：将字符串转换成html文本，如果遇到“\n”换行换符，则要将这一段文本使用<p></p>标签
@@ -14,7 +17,11 @@ public class StringUtils {
 	
 	//手机号码
 	public static boolean isPhone(String phone){
-		
+		Pattern pattern = Pattern.compile("^1[3|4|5|7|8][0-9]\\d{8}$");
+		Matcher matcher = pattern.matcher(phone);
+		if(matcher.matches()){
+			return true;
+		}
 		return false;
 	}
 	
