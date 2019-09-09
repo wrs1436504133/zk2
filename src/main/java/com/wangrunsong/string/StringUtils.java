@@ -27,7 +27,19 @@ public class StringUtils {
 	
 	//ÊÇ·ñÎªÓÊÏä
 	public static boolean isEmail(String email){
-		 
+		 Pattern pattern = Pattern.compile("^([a-z0-9A-Z]+)@([a-z0-9A-Z]+\\.)+[a-zA-Z]{2,}$");
+		 Matcher matcher = pattern.matcher(email);
+		 if(matcher.matches()){
+			 return true;
+		 }
+		return false;
+	}
+	
+	//ÅĞ¶ÏÊÇ·ñÎª¿Õ
+	public static boolean isBlank(String blank){
+		if(blank!=null&&blank.length()>0&&blank.trim().length()>0){
+			return true;
+		}
 		return false;
 	}
 }
