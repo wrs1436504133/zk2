@@ -10,5 +10,6 @@ public class StringTest {
 	public void isPhone(){
 		boolean phone = StringUtils.isPhone("18511758342");
 		System.out.println(phone);
+		
 	}
 }
