@@ -20,7 +20,7 @@ public class StringUtils {
 	
 	//ÊÇ·ñÎªÓÊÏä
 	public static boolean isEmail(String enail){
-		
+		 
 		return false;
 	}
 }
