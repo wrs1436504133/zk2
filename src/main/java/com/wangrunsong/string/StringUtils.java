@@ -9,7 +9,7 @@ public class StringUtils {
 	 * 包起来。如果遇到“\n\r”两个在一起按上面\n处理。如果只遇到一个“\r”则替换成<br/>标签。
 	 * 使用场景：网页文本框传到后台的字符串就可能就会回车换行。
 	 * */
-	public static void toHeml(String str){
+	public static String toHeml(String str){
 		//实现代码
 		
 		StringBuffer buffer = new StringBuffer();
@@ -19,7 +19,7 @@ public class StringUtils {
 			buffer.append(string);
 			buffer.append("</p>");
 		}
-		System.out.println(buffer.toString());
+		return buffer.toString();
 	}
 	
 	//手机号码
