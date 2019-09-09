@@ -11,4 +11,10 @@ public class StringUtils {
 		
 		return "";
 	}
+	
+	//ÊÖ»úºÅÂë
+	public static boolean isPhone(String phone){
+		
+		return false;
+	}
 }
