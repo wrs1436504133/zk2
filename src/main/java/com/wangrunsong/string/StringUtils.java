@@ -17,4 +17,10 @@ public class StringUtils {
 		
 		return false;
 	}
+	
+	//ÊÇ·ñÎªÓÊÏä
+	public static boolean isEmail(String enail){
+		
+		return false;
+	}
 }
